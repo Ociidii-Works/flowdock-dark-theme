@@ -46,32 +46,18 @@ time.timestamp, time.timestamp.detailed {
   color: #656565;
 }
 
-input[type="text"],input[type="password"],input[type="email"],textarea
-{
-border-width:0.077em;
-border-style:solid;
-color: #bbb;
-padding:0.654em;
--webkit-box-sizing:border-box;
--moz-box-sizing:border-box;
-box-sizing:border-box;
-width:35em;
-margin-right:5px;
-background-color:#222;
-border-color: #444;
-border-radius:2px;
-}
-
 .single-message .excerpt {
   color: #aaa;
 }
 
-#chat form textarea, #chat form pre {
+#chat form textarea, #chat form pre, input[type="text"],input[type="password"],input[type="email"],textarea, .inbox-toolbar form#search {
 -webkit-box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
 -moz-box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
 box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
-background-color: #333;
-}
+color: #bbb;
+background-color:#222;
+border-color: #444;
+  }
 
 .comment-form {
 -webkit-box-sizing: border-box;
