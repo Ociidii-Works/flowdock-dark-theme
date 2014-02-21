@@ -2,6 +2,13 @@
   background: #222 !important;
 }
 
+.inbox-message .title, .info-message .title, .error-message .title, .single-message .title {
+  color: #ccc;
+}
+
+.inbox-message .excerpt, .info-message .excerpt, .error-message .excerpt, .single-message .excerpt {
+ color: #7C7C7C'
+}
 #tab-bar, #user-menu-toggle{
   background: #111 !important;
   border-bottom: solid 1px #444;
@@ -54,7 +61,7 @@ border-radius:2px;
 .single-message .excerpt {
   color: #aaa;
 }
-
+    
 #chat form textarea, #chat form pre {
 -webkit-box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
 -moz-box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
