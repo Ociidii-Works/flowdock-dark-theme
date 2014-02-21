@@ -10,10 +10,18 @@
   background: #111 !important;
   height: 30px !important;
 }
+
 .tab-fade-wrapper::after{
   background-image: none !important;
 }
 
+.tag
+{
+	background: rgb(55, 70, 94);
+	border: 0px solid #333;
+	color: #A7A7A7 !important;
+}
+ 
 .toolbar, .inbox-toolbar, .chat-toolbar, .single-view-close-button, .single-view-toolbar{
   background: #303030 !important;
   border-bottom: solid 1px #444 !important;
