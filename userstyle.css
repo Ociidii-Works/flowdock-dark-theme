@@ -2,6 +2,10 @@
   background: #222 !important;
 }
 
+body, input, select, textarea, button, .inbox-message .excerpt, .info-message .excerpt, .error-message .excerpt, .single-message .excerpt {
+ color: #888888 
+}
+
 .inbox-message .title, .info-message .title, .error-message .title, .single-message .title {
   color: #ccc;
 }
@@ -107,7 +111,7 @@ z-index: 100;
 }
 
 strong.author-name {
-	color: #999;
+	color: #4A7948;
 }
 
 .chat-message, .comment-message, .action-message, .line-message, .status-message, .file-message, .error-message, .inbox-comment-message, .inbox-file-comment-messag {
