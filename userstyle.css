@@ -108,6 +108,25 @@ strong.author-name {
   border: none !important;
 }
 
+.chat-message.date-separator::before, .date-separator.comment-message::before, .date-separator.action-message::before, .date-separator.line-message::before, .date-separator.status-message::before, .date-separator.file-message::before, .date-separator.inbox-comment-message::before, .date-separator.inbox-file-comment-message::before {
+border-top-width: 0.077em;
+border-top-style: solid;
+padding-top: 0.654em;
+padding-bottom: 0.808em;
+display: block;
+content: attr(data-timestamp);
+position: absolute;
+left: 0;
+top: -39px;
+width: 100%;
+color: #838383;
+text-align: center;
+background: #1A1A1A;
+border-color: #272727;
+border-left: 3px solid #272727;
+border-left-color: #272727 !important;
+}
+
 .message-author { color: #999; }
 .message-author:hover { color: #ccc; text-decoration: none !important }
 
