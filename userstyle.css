@@ -14,7 +14,7 @@ element.style {
 }
 .action-message, .line-message, .status-message, .action-message+li[class*="message"], .line-message+li[class*="message"], .status-message+li[class*="message"]
 {
-	background-color: #4F87A1;
+	background-color: #0F6992;
 }
 .action-message .message-author, .line-message .message-author, .action-message .content, .line-message .content
 {
@@ -22,7 +22,7 @@ element.style {
 }
 .action-message, .line-message, .status-message
 {
-	background: #326C92;
+	background: #30668A;
 }
 body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
