@@ -6,10 +6,6 @@ element.style {
 	font-family: 'Varela Round', sans-serif;
 }
 /* end font override */
-.inbox-panel,#chat,#single,.flow
-{
-	background: #222 !important;
-}
 body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
 	font-family: 'Varela Round', sans-serif;
@@ -24,6 +20,14 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 .inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
 	color: #7c7c7c;
+}
+.inbox-panel,#chat,#single,.flow
+{
+	background: #222 !important;
+}
+.inbox-toolbar input[type=text], .inbox-toolbar .tokenist
+{
+  color: #aaa;
 }
 #tab-bar,#user-menu-toggle
 {
