@@ -6,11 +6,20 @@ element.style {
 	font-family: 'Varela Round', sans-serif;
 }
 /* end font override */
+.autocompleter, .autocompleter li.selected, .tokenist+.autocompleter li {
+	background-color: #222;
+	background: #222 !important;
+	border-top: 1px, #888;
+	color: #888;
+}
 body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
 	font-family: 'Varela Round', sans-serif;
 	color: #888;
 	overflow: hidden;
+}
+.current .tab-link {
+	color: #5DA7E9;
 }
 .inbox-message .title,.info-message .title,.error-message .title,.single-message .title
 {
@@ -27,7 +36,23 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 }
 .inbox-toolbar input[type=text], .inbox-toolbar .tokenist
 {
-  color: #aaa;
+	color: #aaa;
+}
+#filters {
+	background-color: #222;
+}
+#filters button
+{
+	color: #aaa;
+}
+#filters button:hover
+{
+	color: #eee;
+}
+#filters li.active button
+{
+	border-left: 0.5em solid #558fc2;
+	color: #558fc2;
 }
 #tab-bar,#user-menu-toggle
 {
@@ -40,6 +65,59 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 	background: #111 !important;
 	height: 30px !important;
 }
+h1, h2, h3, h4, h5, h6, #sources a.expand-link {
+	color: #999;
+}
+.modal input[type=text]
+{
+	border:	2px solid #151515;
+}
+.overlay-tab-content, .overlay-tab{
+	background-color: #2e2e2e;
+	border-color: #222;
+	color: #666;
+}
+.overlay-tab.current {
+	background-color: #222;
+	border-color: #222;
+	color: #888;
+}
+.overlay-tab .help-link {
+	color: #ccc;
+	box-shadow: 0 0 0 2px #656565;
+}
+.settings-header, .settings-info, .settings-content {
+	background-color: #222;
+	border-color: #424242;
+}
+.single-message .excerpt
+{
+	color: #aaa;
+}
+#settings .row {
+	background-color: #2a2a2a;
+	border: 1px solid #222;
+	border-color: #222;
+}
+#sources .group-title, #sources .source {
+	border-bottom: none;
+}
+#sources h4.integrations {
+	background-color: #222;
+	border-color: #252525;
+}
+#sources .source-group.open .group-title {
+	background-color: #1b1b1b;
+}
+#sources .source {
+	background-color: #131313;
+	border-left: 3px solid #424242;
+	border-right: 3px solid #424242;
+}
+#sources #static-sources li.source-group:last-child .group-title
+{
+	border-bottom-style: none;
+}
 .tab-fade-wrapper::after
 {
 	background-image: none !important;
@@ -49,6 +127,15 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 	background: #37465e;
 	border: 0 solid #333;
 	color: #a7a7a7 !important;
+}
+time.timestamp,time.timestamp.detailed
+{
+	color: #656565;
+}
+.modal .tokenist {
+	border: 2px solid #151515;
+	background-color: #151515;
+	color: #888;
 }
 .toolbar,.inbox-toolbar,.chat-toolbar,.single-view-close-button,.single-view-toolbar
 {
@@ -60,18 +147,10 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 {
 	box-shadow: 0 0 4px 1px #3a9ef0 !important;
 }
-time.timestamp,time.timestamp.detailed
-{
-	color: #656565;
-}
-.single-message .excerpt
-{
-	color: #aaa;
-}
 #chat form textarea,#chat form pre,input[type="text"],input[type="password"],input[type="email"],textarea,.inbox-toolbar form#search
 {
 	background-color: #222;
-	border-color: #444;
+	border-color: #151515;
 	box-shadow: 0 1px 0 #222,0 2px 1px rgba(0,0,0,0.1) inset;
 	color: #bbb;
 }
@@ -169,8 +248,14 @@ strong.author-name,.inbox-message .meta
 }
 .toolbar-button
 {
+	background-color: #222;
 	border: solid 1px #393939 !important;
 	font-weight: 300 !important;
+}
+.toolbar-button:hover, .toolbar-button.hover, .toolbar-button:active, .toolbar-button.active
+{
+	background: #888888;
+	color: #111 !important;
 }
 a:link
 {
