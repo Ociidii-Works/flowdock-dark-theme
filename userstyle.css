@@ -21,6 +21,9 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 .current .tab-link {
 	color: #5DA7E9;
 }
+.current .tab-caret-wrapper::before {
+	border-color: transparent transparent #303030 transparent;
+}
 .inbox-message .title,.info-message .title,.error-message .title,.single-message .title
 {
 	font-family: 'Varela Round', sans-serif;
