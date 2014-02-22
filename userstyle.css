@@ -1,16 +1,31 @@
 @charset "UTF-8";
 
+/* font override */
+
+@import url(http://fonts.googleapis.com/css?family=Varela+Round);
+@import url(http://fonts.googleapis.com/css?family=Inconsolata);
+
+.content{
+  font-family: 'Varela Round', sans-serif;
+}
+element.style {
+	font-family: 'Varela Round', sans-serif;
+  }
+/* end font override */
+
 .inbox-panel,#chat,#single,.flow
 {
 	background: #222 !important;
 }
 body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
+	font-family: 'Varela Round', sans-serif;
 	color: #888;
 	overflow: hidden;
 }
 .inbox-message .title,.info-message .title,.error-message .title,.single-message .title
 {
+	font-family: 'Varela Round', sans-serif;
 	color: #ccc;
 }
 .inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
@@ -19,6 +34,7 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 }
 #tab-bar,#user-menu-toggle
 {
+	font-family: 'Varela Round', sans-serif;
 	background: #111 !important;
 	border-bottom: solid 1px #444;
 }
@@ -39,6 +55,7 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 }
 .toolbar,.inbox-toolbar,.chat-toolbar,.single-view-close-button,.single-view-toolbar
 {
+	font-family: 'Varela Round', sans-serif;
 	background: #303030 !important;
 	border-bottom: solid 1px #444 !important;
 }
@@ -83,9 +100,9 @@ time.timestamp,time.timestamp.detailed
 
 .chat-message,.comment-message, .line-message,.file-message,.error-message,.inbox-comment-message,.inbox-file-comment-message,.mention-message,.inbox-message,.info-message,.single-message,.single-view-content
 {
+	font-family: 'Varela Round', sans-serif;
 	background: #222 !important;
 	border-color: #292929 !important;
-	font-family: 'proxima nova' !important;
 	font-size: 14px !important;
 	font-weight: 500 !important;
 }
@@ -107,10 +124,12 @@ strong.author-name,.inbox-message .meta
 	font-style: italic;
 }
 .status-message .message-author {
+  font-family: 'Varela Round', sans-serif;
   font-style: bold;
   }
 
  .status-message, .status-message .content {
+  font-family: 'Varela Round', sans-serif;
   color: fff;
   background-color: #1b1b1b;
   border-color: #1b1b1b;
@@ -119,12 +138,6 @@ strong.author-name,.inbox-message .meta
 .action-message .message-author,.line-message .message-author,.action-message .content,.line-message .content
 {
 	color: #5C9900 !important;
-}
-.chat-message pre.formatted,.comment-message pre.formatted,.action-message pre.formatted,.line-message pre.formatted,.status-message pre.formatted,.file-message pre.formatted,.error-message pre.formatted,.inbox-comment-message pre.formatted,.inbox-file-comment-message pre.formatted,.mention-message pre.formatted,.inbox-message pre.formatted,.info-message pre.formatted,.single-message pre.formatted
-{
-	background: #333 !important;
-	border: none !important;
-	color: #ccc;
 }
 
 .chat-message.date-separator::before,.date-separator.comment-message::before,.date-separator.action-message::before,.date-separator.line-message::before,.date-separator.status-message::before,.date-separator.file-message::before,.date-separator.inbox-comment-message::before,.date-separator.inbox-file-comment-message::before
@@ -151,6 +164,7 @@ strong.author-name,.inbox-message .meta
 }
 .message-author
 {
+	font-family: 'Varela Round', sans-serif;
 	color: #487DA0;
 }
 .message-author:hover
@@ -171,7 +185,6 @@ strong.author-name,.inbox-message .meta
 .toolbar-button
 {
 	border: solid 1px #393939 !important;
-	font-family: 'proxima nova' !important;
 	font-weight: 300 !important;
 }
 a:link
@@ -204,16 +217,27 @@ a:active
 	padding-right: 3em;
 }
 
+/* Code formatting */
+
+.chat-message pre.formatted,.comment-message pre.formatted,.action-message pre.formatted,.line-message pre.formatted,.status-message pre.formatted,.file-message pre.formatted,.inbox-comment-message pre.formatted,.inbox-file-comment-message pre.formatted,.mention-message pre.formatted,.inbox-message pre.formatted,.info-message pre.formatted,.error-message pre.formatted,.single-message pre.formatted ,code, pre
+{
+
+	background-color: #111;
+	border: 1px solid #222;
+}
+
+/* end code formatting */
+
 ::-webkit-scrollbar {
-    width: 3px;
+	width: 3px;
 }
 
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 5px #222);
-    border-radius: 2px;
+	-webkit-box-shadow: inset 0 0 5px #222);
+	border-radius: 2px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    -webkit-box-shadow: inset 0 0 5px rgba(175,175,175,0.5);
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 0 5px rgba(175,175,175,0.5);
 }
