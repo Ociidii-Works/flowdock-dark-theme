@@ -89,6 +89,10 @@ h1, h2, h3, h4, h5, h6, #sources a.expand-link {
 	color: #ccc;
 	box-shadow: 0 0 0 2px #656565;
 }
+#pane-switcher {
+background: #303030;
+border-right: 3px solid #424242;
+}
 .settings-header, .settings-info, .settings-content {
 	background-color: #222;
 	border-color: #424242;
