@@ -19,7 +19,7 @@ body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt
 	overflow: hidden;
 }
 .current .tab-link {
-	color: #5DA7E9;
+	color: #eee;
 }
 .current .tab-caret-wrapper::before {
 	border-color: transparent transparent #303030 transparent;
