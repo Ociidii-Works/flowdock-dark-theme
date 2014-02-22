@@ -12,6 +12,18 @@ element.style {
 	border-top: 1px, #888;
 	color: #888;
 }
+.action-message, .line-message, .status-message, .action-message+li[class*="message"], .line-message+li[class*="message"], .status-message+li[class*="message"]
+{
+	background-color: #4F87A1;
+}
+.action-message .message-author, .line-message .message-author, .action-message .content, .line-message .content
+{
+	color: #bbb !important;
+}
+.action-message, .line-message, .status-message
+{
+	background: #326C92;
+}
 body,input,select,textarea,button,.inbox-message .excerpt,.info-message .excerpt,.error-message .excerpt,.single-message .excerpt
 {
 	font-family: 'Varela Round', sans-serif;
@@ -206,10 +218,6 @@ strong.author-name,.inbox-message .meta
 	background-color: #1b1b1b;
 	background: #1b1b1b;
 	border-color: #1b1b1b;
-}
-.action-message .message-author,.line-message .message-author,.action-message .content,.line-message .content
-{
-	color: #5C9900 !important;
 }
 .chat-message.date-separator::before,.date-separator.comment-message::before,.date-separator.action-message::before,.date-separator.line-message::before,.date-separator.status-message::before,.date-separator.file-message::before,.date-separator.inbox-comment-message::before,.date-separator.inbox-file-comment-message::before
 {
